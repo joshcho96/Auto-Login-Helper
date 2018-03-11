@@ -1,3 +1,5 @@
+package sample;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import com.gargoylesoftware.htmlunit.BrowserVersion;
