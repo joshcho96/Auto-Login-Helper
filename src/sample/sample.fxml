@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" pickOnBounds="false" prefHeight="400.0" prefWidth="135.0" xmlns="http://javafx.com/javafx/8.0.161" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane id="main" prefHeight="400.0" prefWidth="114.0" style="-fx-background-color: #2f3640;">
+         <children>
+            <Pane layoutY="20.0" prefHeight="56.0" prefWidth="135.0" style="-fx-background-color: #dcdde1;">
+               <children>
+                  <Text layoutX="43.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto-Login Helper" wrappingWidth="81.7294921875" />
+                  <FontAwesomeIcon iconName="TH_LIST" layoutX="10.0" layoutY="38.0" size="2em" />
+               </children>
+            </Pane>
+            <Pane layoutY="355.0" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #f7f1e3;">
+               <children>
+                  <JFXButton id="Login" onAction="#loginClick" prefHeight="45.0" prefWidth="135.0" text="Login">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+            </Pane>
+            <JFXButton id="closeBtn" layoutX="106.0" onAction="#closeBtn" onMouseClicked="#closeBtn" prefHeight="8.0" prefWidth="29.0" text="X" textFill="#dcdde1">
+               <font>
+                  <Font name="DANTE-Bold" size="10.0" />
+               </font>
+            </JFXButton>
+            <Pane layoutY="96.0" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #0fb9b1;">
+               <children>
+                  <JFXButton id="Login" onAction="#invenClicked" prefHeight="45.0" prefWidth="135.0" text="Inven">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIcon iconName="LINKEDIN_SQUARE" layoutX="14.0" layoutY="33.0" size="2em" />
+               </children>
+            </Pane>
+            <Pane layoutY="161.0" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #20bf6b;">
+               <children>
+                  <JFXButton id="Login" onAction="#naverClicked" prefHeight="45.0" prefWidth="135.0" text="Naver">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIcon iconName="GRADUATION_CAP" layoutX="7.0" layoutY="32.0" size="2em" />
+               </children>
+            </Pane>
+            <Pane layoutY="226.0" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #45aaf2;">
+               <children>
+                  <JFXButton id="Login" onAction="#facebookClicked" prefHeight="45.0" prefWidth="135.0" text="   Facebook">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIcon iconName="FACEBOOK_SQUARE" layoutX="11.0" layoutY="32.0" size="2em" />
+               </children>
+            </Pane>
+            <Pane layoutY="291.0" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #eb3b5a;">
+               <children>
+                  <JFXButton id="Login" layoutY="1.0" onAction="#instagramClicked" prefHeight="45.0" prefWidth="135.0" text="    Instagram">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <FontAwesomeIcon iconName="INSTAGRAM" layoutX="11.0" layoutY="33.0" size="2em" />
+               </children>
+            </Pane>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
